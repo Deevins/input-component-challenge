@@ -1,0 +1,117 @@
+@import 'src/styles/variables';
+
+*,*:focus,*:hover{
+  outline: none;
+}
+
+.main{
+  min-width: 105px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+
+
+  input, textarea {
+    width: 200px;
+    height: 56px;
+    border: 1px solid $default-input;
+    border-radius: 8px;
+    font-size: 14px;
+    padding-left: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+
+    &:hover {
+      border: 1.1px solid $default-input-hover;
+    }
+
+    &:focus{
+      border: 1.2px solid $default-input-focus ;
+    }
+
+  }
+
+  .textcss{
+    align-self: flex-start;
+    margin-top: 4px;
+  }
+
+}
+
+
+.inputBlock{
+  p{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: $helper-text;
+    margin-top:4px;
+    display: flex;
+    position: relative;
+  }
+
+}
+
+.error {
+  border: 1px $error-input solid !important;
+
+  &:hover{
+    border: 1px $error-input-hover solid !important;
+
+  }
+  &:focus{
+    border: 1px $error-input-focus solid !important;
+  }
+
+}
+
+.errorParagraph{
+  color:red !important;
+
+
+}
+
+.disabled{
+  background: $disabled-input-background;
+  border: 1px $disabled-input solid;
+  cursor: not-allowed;
+}
+
+
+.sm {
+  height: 40px !important;
+}
+
+.md {
+  height: 56px !important;
+}
+
+.lg {
+  height: 62px !important;
+}
+
+.fullwidth{
+  width: 100% !important;
+  @media screen and (max-width: 800px) {
+  }
+}
+
+.textareaCss {
+  padding: 18px 12px;
+  text-indent: 0;
+  line-height: 20px;
+  height: auto;
+}
+
+.style {
+  @media screen and (max-width: 800px) {
+    left:60px;
+  }
+}

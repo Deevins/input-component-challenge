@@ -1,0 +1,46 @@
+@import '../styles/variables';
+
+.container {
+  min-width: 100vh;
+  min-height: 100vh;
+  margin: 0 auto 2em;
+  display: grid;
+  grid-template-columns: 10% 5fr;
+}
+
+
+.content {
+  grid-area: 1/2/1/5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  width: 3em;
+  height: 100%;
+  background-color: $sidebar-background;
+  margin: 0;
+  padding: 47px 67px 0 57px;
+  position: fixed;
+}
+
+@media screen and (max-width: 840px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content{
+    width: 50%;
+  }
+}
